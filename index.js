@@ -1,7 +1,12 @@
 require('dotenv').config();
+const express = require('express');
 const { nanoid } = require('nanoid');
 const { Kafka } = require('kafkajs');
 const AivenApi = require('@de44/aiven-node');
+
+const app = express();
+app.get('/', (req, res) => res.send('Hello, World!'));
+app.listen(process.env.PORT || 9000);
 
 const token = process.env.TOKEN || '';
 const projectId = process.env.PROJECT_ID || '';

@@ -12,7 +12,11 @@
   "dependencies": {
     "@de44/aiven-node": "^0.2.0",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "kafkajs": "^1.15.0",
     "nanoid": "^3.1.20"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
